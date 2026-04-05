@@ -1,0 +1,273 @@
+2026-04-05 18:32:30 | INFO | 详细流程日志: /root/gpt-register-oss/logs/flow-trace/flow_trace_20260405_183230.jsonl
+2026-04-05 18:32:30 | INFO | === 账号池自动维护开始（二合一）===
+2026-04-05 18:32:30 | INFO | 配置文件: /root/gpt-register-oss/config.json
+2026-04-05 18:32:30 | INFO | 日志文件: /root/gpt-register-oss/logs/pool_maintainer_20260405_183229_452647.log
+2026-04-05 18:32:30 | INFO | === 账号池循环维护开始 ===
+2026-04-05 18:32:30 | INFO | >>> 循环轮次 #1 开始
+2026-04-05 18:32:30 | INFO | 开始清理账号: base_url=http://127.0.0.1:8317 target_type=codex used_percent_threshold=90 sample_size=0
+2026-04-05 18:32:32 | INFO | 账号探测进度: 已检查=50/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:33 | INFO | 账号探测进度: 已检查=100/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:33 | INFO | 账号探测进度: 已检查=114/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:33 | INFO | 探测完成: 总账号=114, codex账号=114, 本轮探测=114, 401失效=0, used_percent超标=35, quota=35, healthy+disabled=0
+2026-04-05 18:32:33 | INFO | 清理策略决策: 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:33 | INFO | 清理动作汇总: 删除(成功=0 失败=0) 禁用(成功=0 失败=0) 启用(成功=0 失败=0)
+2026-04-05 18:32:34 | INFO | 清理阶段汇总: 动作总计=0 | 删除 0/0 | 禁用 0/0 | 启用 0/0
+2026-04-05 18:32:34 | INFO | 清理后统计: 总账号=114, candidates=79, 阈值=100
+2026-04-05 18:32:34 | INFO | 当前 candidates 未达标，缺口=21，开始补号。
+2026-04-05 18:32:34 | INFO | 开始补号: 目标 token=21, 并发=1, 邮箱提供方=tempmail_lol
+2026-04-05 18:32:34 | INFO | Mail Provider Config: tempmail_lol(https://api.tempmail.lol/v2)
+2026-04-05 18:32:34 | INFO | 生成 TempMail.lol 邮箱成功: hoover529c42@2w.hush2u.com
+2026-04-05 18:32:37 | WARNING | 步骤2失败: email=hoover529c42@2w.hush2u.com reason=user_register_http_400
+2026-04-05 18:32:37 | WARNING | 注册失败: step2_register_user | email=hoover529c42@2w.hush2u.com
+2026-04-05 18:32:37 | WARNING | 注册流程失败: hoover529c42@2w.hush2u.com
+2026-04-05 18:32:37 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=hoover529c42@2w.hush2u.com
+2026-04-05 18:32:37 | INFO | 补号进度: token 0/21 | ✅0 ❌1 ⏭️0 | 用时 3.7s
+2026-04-05 18:32:42 | INFO | 生成 TempMail.lol 邮箱成功: bevan529c4a@cj.tohal.org
+2026-04-05 18:32:45 | WARNING | 步骤2失败: email=bevan529c4a@cj.tohal.org reason=user_register_http_400
+2026-04-05 18:32:45 | WARNING | 注册失败: step2_register_user | email=bevan529c4a@cj.tohal.org
+2026-04-05 18:32:45 | WARNING | 注册流程失败: bevan529c4a@cj.tohal.org
+2026-04-05 18:32:45 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=bevan529c4a@cj.tohal.org
+2026-04-05 18:32:45 | INFO | 补号进度: token 0/21 | ✅0 ❌2 ⏭️0 | 用时 11.4s
+2026-04-05 18:32:48 | INFO | 生成 TempMail.lol 邮箱成功: huston529c50@fbg.hush2u.com
+2026-04-05 18:32:52 | WARNING | 步骤2失败: email=huston529c50@fbg.hush2u.com reason=user_register_http_400
+2026-04-05 18:32:52 | WARNING | 注册失败: step2_register_user | email=huston529c50@fbg.hush2u.com
+2026-04-05 18:32:52 | WARNING | 注册流程失败: huston529c50@fbg.hush2u.com
+2026-04-05 18:32:52 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=huston529c50@fbg.hush2u.com
+2026-04-05 18:32:52 | INFO | 补号进度: token 0/21 | ✅0 ❌3 ⏭️0 | 用时 18.0s
+2026-04-05 18:32:57 | INFO | 生成 TempMail.lol 邮箱成功: thury529c59@z4.tohal.org
+2026-04-05 18:33:00 | WARNING | 步骤2失败: email=thury529c59@z4.tohal.org reason=user_register_http_400
+2026-04-05 18:33:00 | WARNING | 注册失败: step2_register_user | email=thury529c59@z4.tohal.org
+2026-04-05 18:33:00 | WARNING | 注册流程失败: thury529c59@z4.tohal.org
+2026-04-05 18:33:00 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=thury529c59@z4.tohal.org
+2026-04-05 18:33:00 | INFO | 补号进度: token 0/21 | ✅0 ❌4 ⏭️0 | 用时 26.3s
+2026-04-05 18:33:05 | INFO | 生成 TempMail.lol 邮箱成功: darell529c61@v1.accesswiki.net
+2026-04-05 18:33:08 | WARNING | 步骤2失败: email=darell529c61@v1.accesswiki.net reason=user_register_http_400
+2026-04-05 18:33:08 | WARNING | 注册失败: step2_register_user | email=darell529c61@v1.accesswiki.net
+2026-04-05 18:33:08 | WARNING | 注册流程失败: darell529c61@v1.accesswiki.net
+2026-04-05 18:33:08 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=darell529c61@v1.accesswiki.net
+2026-04-05 18:33:08 | INFO | 补号进度: token 0/21 | ✅0 ❌5 ⏭️0 | 用时 34.4s
+2026-04-05 18:33:13 | INFO | 生成 TempMail.lol 邮箱成功: esta529c69@ck.tohal.org
+2026-04-05 18:33:16 | WARNING | 步骤2失败: email=esta529c69@ck.tohal.org reason=user_register_http_400
+2026-04-05 18:33:16 | WARNING | 注册失败: step2_register_user | email=esta529c69@ck.tohal.org
+2026-04-05 18:33:16 | WARNING | 注册流程失败: esta529c69@ck.tohal.org
+2026-04-05 18:33:16 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=esta529c69@ck.tohal.org
+2026-04-05 18:33:16 | INFO | 补号进度: token 0/21 | ✅0 ❌6 ⏭️0 | 用时 42.8s
+2026-04-05 18:33:20 | INFO | 生成 TempMail.lol 邮箱成功: koziara529c70@92k.cloudvxz.com
+2026-04-05 18:33:24 | WARNING | 步骤2失败: email=koziara529c70@92k.cloudvxz.com reason=user_register_http_400
+2026-04-05 18:33:24 | WARNING | 注册失败: step2_register_user | email=koziara529c70@92k.cloudvxz.com
+2026-04-05 18:33:24 | WARNING | 注册流程失败: koziara529c70@92k.cloudvxz.com
+2026-04-05 18:33:24 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=koziara529c70@92k.cloudvxz.com
+2026-04-05 18:33:24 | INFO | 补号进度: token 0/21 | ✅0 ❌7 ⏭️0 | 用时 50.3s
+2026-04-05 18:33:28 | INFO | 生成 TempMail.lol 邮箱成功: warram529c78@5i.cloudvxz.com
+2026-04-05 18:33:32 | WARNING | 步骤2失败: email=warram529c78@5i.cloudvxz.com reason=user_register_http_400
+2026-04-05 18:33:32 | WARNING | 注册失败: step2_register_user | email=warram529c78@5i.cloudvxz.com
+2026-04-05 18:33:32 | WARNING | 注册流程失败: warram529c78@5i.cloudvxz.com
+2026-04-05 18:33:32 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=warram529c78@5i.cloudvxz.com
+2026-04-05 18:33:32 | INFO | 补号进度: token 0/21 | ✅0 ❌8 ⏭️0 | 用时 58.8s
+2026-04-05 18:33:35 | INFO | 生成 TempMail.lol 邮箱成功: dara529c7f@t5.hush2u.com
+2026-04-05 18:33:39 | WARNING | 步骤2失败: email=dara529c7f@t5.hush2u.com reason=user_register_http_400
+2026-04-05 18:33:39 | WARNING | 注册失败: step2_register_user | email=dara529c7f@t5.hush2u.com
+2026-04-05 18:33:39 | WARNING | 注册流程失败: dara529c7f@t5.hush2u.com
+2026-04-05 18:33:39 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=dara529c7f@t5.hush2u.com
+2026-04-05 18:33:39 | INFO | 补号进度: token 0/21 | ✅0 ❌9 ⏭️0 | 用时 65.2s
+2026-04-05 18:33:42 | INFO | 生成 TempMail.lol 邮箱成功: rod529c86@hsh.sixthirtydance.org
+2026-04-05 18:33:45 | WARNING | 步骤2失败: email=rod529c86@hsh.sixthirtydance.org reason=user_register_http_400
+2026-04-05 18:33:45 | WARNING | 注册失败: step2_register_user | email=rod529c86@hsh.sixthirtydance.org
+2026-04-05 18:33:45 | WARNING | 注册流程失败: rod529c86@hsh.sixthirtydance.org
+2026-04-05 18:33:45 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=rod529c86@hsh.sixthirtydance.org
+2026-04-05 18:33:45 | INFO | 补号进度: token 0/21 | ✅0 ❌10 ⏭️0 | 用时 71.7s
+2026-04-05 18:33:49 | INFO | 生成 TempMail.lol 邮箱成功: jemie529c8d@bi.hush2u.com
+2026-04-05 18:33:53 | WARNING | 步骤2失败: email=jemie529c8d@bi.hush2u.com reason=user_register_http_400
+2026-04-05 18:33:53 | WARNING | 注册失败: step2_register_user | email=jemie529c8d@bi.hush2u.com
+2026-04-05 18:33:53 | WARNING | 注册流程失败: jemie529c8d@bi.hush2u.com
+2026-04-05 18:33:53 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=jemie529c8d@bi.hush2u.com
+2026-04-05 18:33:53 | INFO | 补号进度: token 0/21 | ✅0 ❌11 ⏭️0 | 用时 79.5s
+2026-04-05 18:33:59 | INFO | 生成 TempMail.lol 邮箱成功: leotie529c97@p5.hush2u.com
+2026-04-05 18:34:02 | WARNING | 步骤2失败: email=leotie529c97@p5.hush2u.com reason=user_register_http_400
+2026-04-05 18:34:02 | WARNING | 注册失败: step2_register_user | email=leotie529c97@p5.hush2u.com
+2026-04-05 18:34:02 | WARNING | 注册流程失败: leotie529c97@p5.hush2u.com
+2026-04-05 18:34:02 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=leotie529c97@p5.hush2u.com
+2026-04-05 18:34:02 | INFO | 补号进度: token 0/21 | ✅0 ❌12 ⏭️0 | 用时 88.7s
+2026-04-05 18:34:06 | INFO | 生成 TempMail.lol 邮箱成功: maddy529c9e@9b.shopsprint.org
+2026-04-05 18:34:10 | WARNING | 步骤2失败: email=maddy529c9e@9b.shopsprint.org reason=user_register_http_400
+2026-04-05 18:34:10 | WARNING | 注册失败: step2_register_user | email=maddy529c9e@9b.shopsprint.org
+2026-04-05 18:34:10 | WARNING | 注册流程失败: maddy529c9e@9b.shopsprint.org
+2026-04-05 18:34:10 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=maddy529c9e@9b.shopsprint.org
+2026-04-05 18:34:10 | INFO | 补号进度: token 0/21 | ✅0 ❌13 ⏭️0 | 用时 95.8s
+2026-04-05 18:34:12 | INFO | 生成 TempMail.lol 邮箱成功: fitts529ca4@xt.accesswiki.net
+2026-04-05 18:34:16 | WARNING | 步骤2失败: email=fitts529ca4@xt.accesswiki.net reason=user_register_http_400
+2026-04-05 18:34:16 | WARNING | 注册失败: step2_register_user | email=fitts529ca4@xt.accesswiki.net
+2026-04-05 18:34:16 | WARNING | 注册流程失败: fitts529ca4@xt.accesswiki.net
+2026-04-05 18:34:16 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=fitts529ca4@xt.accesswiki.net
+2026-04-05 18:34:16 | INFO | 补号进度: token 0/21 | ✅0 ❌14 ⏭️0 | 用时 102.6s
+2026-04-05 18:34:19 | INFO | 生成 TempMail.lol 邮箱成功: mcclenon529cab@d9.hush2u.com
+2026-04-05 18:34:22 | WARNING | 步骤2失败: email=mcclenon529cab@d9.hush2u.com reason=user_register_http_400
+2026-04-05 18:34:22 | WARNING | 注册失败: step2_register_user | email=mcclenon529cab@d9.hush2u.com
+2026-04-05 18:34:22 | WARNING | 注册流程失败: mcclenon529cab@d9.hush2u.com
+2026-04-05 18:34:22 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=mcclenon529cab@d9.hush2u.com
+2026-04-05 18:34:22 | INFO | 补号进度: token 0/21 | ✅0 ❌15 ⏭️0 | 用时 108.8s
+2026-04-05 18:34:25 | INFO | 生成 TempMail.lol 邮箱成功: marlene529cb1@6o.cloudvxz.com
+2026-04-05 18:34:28 | WARNING | 步骤2失败: email=marlene529cb1@6o.cloudvxz.com reason=user_register_http_400
+2026-04-05 18:34:28 | WARNING | 注册失败: step2_register_user | email=marlene529cb1@6o.cloudvxz.com
+2026-04-05 18:34:28 | WARNING | 注册流程失败: marlene529cb1@6o.cloudvxz.com
+2026-04-05 18:34:28 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=marlene529cb1@6o.cloudvxz.com
+2026-04-05 18:34:28 | INFO | 补号进度: token 0/21 | ✅0 ❌16 ⏭️0 | 用时 114.3s
+2026-04-05 18:34:31 | INFO | 生成 TempMail.lol 邮箱成功: scotney529cb6@ue.hush2u.com
+2026-04-05 18:34:34 | WARNING | 步骤2失败: email=scotney529cb6@ue.hush2u.com reason=user_register_http_400
+2026-04-05 18:34:34 | WARNING | 注册失败: step2_register_user | email=scotney529cb6@ue.hush2u.com
+2026-04-05 18:34:34 | WARNING | 注册流程失败: scotney529cb6@ue.hush2u.com
+2026-04-05 18:34:34 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=scotney529cb6@ue.hush2u.com
+2026-04-05 18:34:34 | INFO | 补号进度: token 0/21 | ✅0 ❌17 ⏭️0 | 用时 120.2s
+2026-04-05 18:34:39 | INFO | 生成 TempMail.lol 邮箱成功: moll529cbf@hcj.accesswiki.net
+2026-04-05 18:34:43 | WARNING | 步骤2失败: email=moll529cbf@hcj.accesswiki.net reason=user_register_http_400
+2026-04-05 18:34:43 | WARNING | 注册失败: step2_register_user | email=moll529cbf@hcj.accesswiki.net
+2026-04-05 18:34:43 | WARNING | 注册流程失败: moll529cbf@hcj.accesswiki.net
+2026-04-05 18:34:43 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=moll529cbf@hcj.accesswiki.net
+2026-04-05 18:34:43 | INFO | 补号进度: token 0/21 | ✅0 ❌18 ⏭️0 | 用时 129.3s
+2026-04-05 18:34:46 | INFO | 生成 TempMail.lol 邮箱成功: petrina529cc6@xo.sixthirtydance.org
+2026-04-05 18:34:51 | WARNING | 步骤2失败: email=petrina529cc6@xo.sixthirtydance.org reason=user_register_http_400
+2026-04-05 18:34:51 | WARNING | 注册失败: step2_register_user | email=petrina529cc6@xo.sixthirtydance.org
+2026-04-05 18:34:51 | WARNING | 注册流程失败: petrina529cc6@xo.sixthirtydance.org
+2026-04-05 18:34:51 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=petrina529cc6@xo.sixthirtydance.org
+2026-04-05 18:34:51 | INFO | 补号进度: token 0/21 | ✅0 ❌19 ⏭️0 | 用时 137.1s
+2026-04-05 18:34:54 | INFO | 生成 TempMail.lol 邮箱成功: kira529cce@48j.hush2u.com
+2026-04-05 18:34:57 | WARNING | 步骤2失败: email=kira529cce@48j.hush2u.com reason=user_register_http_400
+2026-04-05 18:34:57 | WARNING | 注册失败: step2_register_user | email=kira529cce@48j.hush2u.com
+2026-04-05 18:34:57 | WARNING | 注册流程失败: kira529cce@48j.hush2u.com
+2026-04-05 18:34:57 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=kira529cce@48j.hush2u.com
+2026-04-05 18:34:57 | INFO | 补号进度: token 0/21 | ✅0 ❌20 ⏭️0 | 用时 143.4s
+2026-04-05 18:35:01 | INFO | 生成 TempMail.lol 邮箱成功: moskow529cd5@18.hush2u.com
+2026-04-05 18:35:05 | WARNING | 步骤2失败: email=moskow529cd5@18.hush2u.com reason=user_register_http_400
+2026-04-05 18:35:05 | WARNING | 注册失败: step2_register_user | email=moskow529cd5@18.hush2u.com
+2026-04-05 18:35:05 | WARNING | 注册流程失败: moskow529cd5@18.hush2u.com
+2026-04-05 18:35:05 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=moskow529cd5@18.hush2u.com
+2026-04-05 18:35:05 | INFO | 补号进度: token 0/21 | ✅0 ❌21 ⏭️0 | 用时 150.9s
+2026-04-05 18:35:08 | INFO | 生成 TempMail.lol 邮箱成功: letisha529cdc@fcg.shopsprint.org
+2026-04-05 18:35:13 | WARNING | 步骤2失败: email=letisha529cdc@fcg.shopsprint.org reason=user_register_http_400
+2026-04-05 18:35:13 | WARNING | 注册失败: step2_register_user | email=letisha529cdc@fcg.shopsprint.org
+2026-04-05 18:35:13 | WARNING | 注册流程失败: letisha529cdc@fcg.shopsprint.org
+2026-04-05 18:35:13 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=letisha529cdc@fcg.shopsprint.org
+2026-04-05 18:35:13 | INFO | 补号进度: token 0/21 | ✅0 ❌22 ⏭️0 | 用时 158.9s
+2026-04-05 18:35:19 | INFO | 生成 TempMail.lol 邮箱成功: lelah529ce7@2g.sixthirtydance.org
+2026-04-05 18:35:22 | WARNING | 步骤2失败: email=lelah529ce7@2g.sixthirtydance.org reason=user_register_http_400
+2026-04-05 18:35:22 | WARNING | 注册失败: step2_register_user | email=lelah529ce7@2g.sixthirtydance.org
+2026-04-05 18:35:22 | WARNING | 注册流程失败: lelah529ce7@2g.sixthirtydance.org
+2026-04-05 18:35:22 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=lelah529ce7@2g.sixthirtydance.org
+2026-04-05 18:35:22 | INFO | 补号进度: token 0/21 | ✅0 ❌23 ⏭️0 | 用时 168.0s
+2026-04-05 18:35:26 | INFO | 生成 TempMail.lol 邮箱成功: brina529cee@gr.shopsprint.org
+2026-04-05 18:35:29 | WARNING | 步骤2失败: email=brina529cee@gr.shopsprint.org reason=user_register_http_400
+2026-04-05 18:35:29 | WARNING | 注册失败: step2_register_user | email=brina529cee@gr.shopsprint.org
+2026-04-05 18:35:29 | WARNING | 注册流程失败: brina529cee@gr.shopsprint.org
+2026-04-05 18:35:29 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=brina529cee@gr.shopsprint.org
+2026-04-05 18:35:29 | INFO | 补号进度: token 0/21 | ✅0 ❌24 ⏭️0 | 用时 175.8s
+2026-04-05 18:35:35 | INFO | 生成 TempMail.lol 邮箱成功: manda529cf7@01.shopsprint.org
+2026-04-05 18:35:38 | WARNING | 步骤2失败: email=manda529cf7@01.shopsprint.org reason=user_register_http_400
+2026-04-05 18:35:38 | WARNING | 注册失败: step2_register_user | email=manda529cf7@01.shopsprint.org
+2026-04-05 18:35:38 | WARNING | 注册流程失败: manda529cf7@01.shopsprint.org
+2026-04-05 18:35:38 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=manda529cf7@01.shopsprint.org
+2026-04-05 18:35:38 | INFO | 补号进度: token 0/21 | ✅0 ❌25 ⏭️0 | 用时 184.6s
+2026-04-05 18:35:42 | INFO | 生成 TempMail.lol 邮箱成功: sile529cfe@qz.cloudvxz.com
+2026-04-05 18:35:48 | WARNING | 步骤2失败: email=sile529cfe@qz.cloudvxz.com reason=user_register_http_400
+2026-04-05 18:35:48 | WARNING | 注册失败: step2_register_user | email=sile529cfe@qz.cloudvxz.com
+2026-04-05 18:35:48 | WARNING | 注册流程失败: sile529cfe@qz.cloudvxz.com
+2026-04-05 18:35:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=sile529cfe@qz.cloudvxz.com
+2026-04-05 18:35:48 | INFO | 补号进度: token 0/21 | ✅0 ❌26 ⏭️0 | 用时 194.5s
+2026-04-05 18:35:52 | INFO | 生成 TempMail.lol 邮箱成功: rexanna529d08@uf.accesswiki.net
+2026-04-05 18:35:55 | WARNING | 步骤2失败: email=rexanna529d08@uf.accesswiki.net reason=user_register_http_400
+2026-04-05 18:35:55 | WARNING | 注册失败: step2_register_user | email=rexanna529d08@uf.accesswiki.net
+2026-04-05 18:35:55 | WARNING | 注册流程失败: rexanna529d08@uf.accesswiki.net
+2026-04-05 18:35:55 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=rexanna529d08@uf.accesswiki.net
+2026-04-05 18:35:55 | INFO | 补号进度: token 0/21 | ✅0 ❌27 ⏭️0 | 用时 201.3s
+2026-04-05 18:36:00 | INFO | 生成 TempMail.lol 邮箱成功: gore529d10@yh.shopsprint.org
+2026-04-05 18:36:03 | WARNING | 步骤2失败: email=gore529d10@yh.shopsprint.org reason=user_register_http_400
+2026-04-05 18:36:03 | WARNING | 注册失败: step2_register_user | email=gore529d10@yh.shopsprint.org
+2026-04-05 18:36:03 | WARNING | 注册流程失败: gore529d10@yh.shopsprint.org
+2026-04-05 18:36:03 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=gore529d10@yh.shopsprint.org
+2026-04-05 18:36:03 | INFO | 补号进度: token 0/21 | ✅0 ❌28 ⏭️0 | 用时 209.8s
+2026-04-05 18:36:07 | INFO | 生成 TempMail.lol 邮箱成功: coffey529d17@s9.shopsprint.org
+2026-04-05 18:36:11 | WARNING | 步骤2失败: email=coffey529d17@s9.shopsprint.org reason=user_register_http_400
+2026-04-05 18:36:11 | WARNING | 注册失败: step2_register_user | email=coffey529d17@s9.shopsprint.org
+2026-04-05 18:36:11 | WARNING | 注册流程失败: coffey529d17@s9.shopsprint.org
+2026-04-05 18:36:11 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=coffey529d17@s9.shopsprint.org
+2026-04-05 18:36:11 | INFO | 补号进度: token 0/21 | ✅0 ❌29 ⏭️0 | 用时 216.8s
+2026-04-05 18:36:16 | INFO | 生成 TempMail.lol 邮箱成功: grayce529d20@yyk.shopsprint.org
+2026-04-05 18:36:20 | WARNING | 步骤2失败: email=grayce529d20@yyk.shopsprint.org reason=user_register_http_400
+2026-04-05 18:36:20 | WARNING | 注册失败: step2_register_user | email=grayce529d20@yyk.shopsprint.org
+2026-04-05 18:36:20 | WARNING | 注册流程失败: grayce529d20@yyk.shopsprint.org
+2026-04-05 18:36:20 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=grayce529d20@yyk.shopsprint.org
+2026-04-05 18:36:20 | INFO | 补号进度: token 0/21 | ✅0 ❌30 ⏭️0 | 用时 226.3s
+2026-04-05 18:36:25 | INFO | 生成 TempMail.lol 邮箱成功: demeter529d29@q8.cloudvxz.com
+2026-04-05 18:36:28 | WARNING | 步骤2失败: email=demeter529d29@q8.cloudvxz.com reason=user_register_http_400
+2026-04-05 18:36:28 | WARNING | 注册失败: step2_register_user | email=demeter529d29@q8.cloudvxz.com
+2026-04-05 18:36:28 | WARNING | 注册流程失败: demeter529d29@q8.cloudvxz.com
+2026-04-05 18:36:28 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=demeter529d29@q8.cloudvxz.com
+2026-04-05 18:36:28 | INFO | 补号进度: token 0/21 | ✅0 ❌31 ⏭️0 | 用时 234.2s
+2026-04-05 18:36:32 | INFO | 生成 TempMail.lol 邮箱成功: seabrooke529d30@ph.shopsprint.org
+2026-04-05 18:36:35 | WARNING | 步骤2失败: email=seabrooke529d30@ph.shopsprint.org reason=user_register_http_400
+2026-04-05 18:36:35 | WARNING | 注册失败: step2_register_user | email=seabrooke529d30@ph.shopsprint.org
+2026-04-05 18:36:35 | WARNING | 注册流程失败: seabrooke529d30@ph.shopsprint.org
+2026-04-05 18:36:35 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=seabrooke529d30@ph.shopsprint.org
+2026-04-05 18:36:35 | INFO | 补号进度: token 0/21 | ✅0 ❌32 ⏭️0 | 用时 241.7s
+2026-04-05 18:36:41 | INFO | 生成 TempMail.lol 邮箱成功: viviene529d39@r8.shopsprint.org
+2026-04-05 18:36:45 | WARNING | 步骤2失败: email=viviene529d39@r8.shopsprint.org reason=user_register_http_400
+2026-04-05 18:36:45 | WARNING | 注册失败: step2_register_user | email=viviene529d39@r8.shopsprint.org
+2026-04-05 18:36:45 | WARNING | 注册流程失败: viviene529d39@r8.shopsprint.org
+2026-04-05 18:36:45 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=viviene529d39@r8.shopsprint.org
+2026-04-05 18:36:45 | INFO | 补号进度: token 0/21 | ✅0 ❌33 ⏭️0 | 用时 251.6s
+2026-04-05 18:36:50 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:36:50 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:36:50 | INFO | 补号进度: token 0/21 | ✅0 ❌34 ⏭️0 | 用时 256.2s
+2026-04-05 18:36:55 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:36:55 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:36:55 | INFO | 补号进度: token 0/21 | ✅0 ❌35 ⏭️0 | 用时 260.9s
+2026-04-05 18:36:58 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:36:58 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:36:58 | INFO | 补号进度: token 0/21 | ✅0 ❌36 ⏭️0 | 用时 264.1s
+2026-04-05 18:37:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:03 | INFO | 补号进度: token 0/21 | ✅0 ❌37 ⏭️0 | 用时 269.5s
+2026-04-05 18:37:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:09 | INFO | 补号进度: token 0/21 | ✅0 ❌38 ⏭️0 | 用时 275.2s
+2026-04-05 18:37:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:13 | INFO | 补号进度: token 0/21 | ✅0 ❌39 ⏭️0 | 用时 279.3s
+2026-04-05 18:37:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:15 | INFO | 补号进度: token 0/21 | ✅0 ❌40 ⏭️0 | 用时 281.8s
+2026-04-05 18:37:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:18 | INFO | 补号进度: token 0/21 | ✅0 ❌41 ⏭️0 | 用时 284.6s
+2026-04-05 18:37:23 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:23 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:23 | INFO | 补号进度: token 0/21 | ✅0 ❌42 ⏭️0 | 用时 289.4s
+2026-04-05 18:37:26 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:26 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:26 | INFO | 补号进度: token 0/21 | ✅0 ❌43 ⏭️0 | 用时 292.1s
+2026-04-05 18:37:31 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:31 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:31 | INFO | 补号进度: token 0/21 | ✅0 ❌44 ⏭️0 | 用时 296.9s
+2026-04-05 18:37:37 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:37 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:37 | INFO | 补号进度: token 0/21 | ✅0 ❌45 ⏭️0 | 用时 303.1s
+2026-04-05 18:37:41 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:41 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:41 | INFO | 补号进度: token 0/21 | ✅0 ❌46 ⏭️0 | 用时 307.7s
+2026-04-05 18:37:47 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:47 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:47 | INFO | 补号进度: token 0/21 | ✅0 ❌47 ⏭️0 | 用时 313.4s
+2026-04-05 18:37:51 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:51 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:51 | INFO | 补号进度: token 0/21 | ✅0 ❌48 ⏭️0 | 用时 317.7s
+2026-04-05 18:37:58 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:37:58 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:37:58 | INFO | 补号进度: token 0/21 | ✅0 ❌49 ⏭️0 | 用时 323.9s
+2026-04-05 18:38:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:38:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:38:03 | INFO | 补号进度: token 0/21 | ✅0 ❌50 ⏭️0 | 用时 329.4s
+2026-04-05 18:38:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:38:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:38:09 | INFO | 补号进度: token 0/21 | ✅0 ❌51 ⏭️0 | 用时 335.2s
+2026-04-05 18:38:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 18:38:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:38:12 | INFO | 补号进度: token 0/21 | ✅0 ❌52 ⏭️0 | 用时 338.7s

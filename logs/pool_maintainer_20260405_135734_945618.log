@@ -1,0 +1,827 @@
+2026-04-05 13:57:35 | INFO | 详细流程日志: /root/gpt-register-oss/logs/flow-trace/flow_trace_20260405_135735.jsonl
+2026-04-05 13:57:35 | INFO | === 账号池自动维护开始（二合一）===
+2026-04-05 13:57:35 | INFO | 配置文件: /root/gpt-register-oss/config.json
+2026-04-05 13:57:35 | INFO | 日志文件: /root/gpt-register-oss/logs/pool_maintainer_20260405_135734_945618.log
+2026-04-05 13:57:35 | INFO | === 账号池循环维护开始 ===
+2026-04-05 13:57:35 | INFO | >>> 循环轮次 #1 开始
+2026-04-05 13:57:35 | INFO | 开始清理账号: base_url=http://127.0.0.1:8317 target_type=codex used_percent_threshold=90 sample_size=0
+2026-04-05 13:57:40 | INFO | 账号探测进度: 已检查=50/73, 待删=0, 待禁用=2, 待启用=24
+2026-04-05 13:57:42 | INFO | 账号探测进度: 已检查=73/73, 待删=0, 待禁用=12, 待启用=25
+2026-04-05 13:57:42 | INFO | 探测完成: 总账号=73, codex账号=73, 本轮探测=73, 401失效=0, used_percent超标=34, quota=34, healthy+disabled=25
+2026-04-05 13:57:42 | INFO | 清理策略决策: 待删=0, 待禁用=12, 待启用=25
+2026-04-05 13:57:43 | INFO | 清理动作汇总: 删除(成功=0 失败=0) 禁用(成功=12 失败=0) 启用(成功=25 失败=0)
+2026-04-05 13:57:43 | INFO | 清理阶段汇总: 动作总计=37 | 删除 0/0 | 禁用 12/12 | 启用 25/25
+2026-04-05 13:57:43 | INFO | 清理后统计: 总账号=73, candidates=39, 阈值=500
+2026-04-05 13:57:43 | INFO | 当前 candidates 未达标，缺口=461，开始补号。
+2026-04-05 13:57:43 | INFO | 开始补号: 目标 token=461, 并发=8, 邮箱提供方=tempmail_lol
+2026-04-05 13:57:43 | INFO | Mail Provider Config: tempmail_lol(https://api.tempmail.lol/v2)
+2026-04-05 13:57:43 | INFO | 生成 TempMail.lol 邮箱成功: nestor525bd7@8l.cloudvxz.com
+2026-04-05 13:57:43 | INFO | 生成 TempMail.lol 邮箱成功: lisette525bd7@qk.tohal.org
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: chrysler525bd8@n7k.tohal.org
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: zakarias525bd8@gui.sixthirtydance.org
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: romola525bd8@go.shopsprint.org
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: sussi525bd8@4y.sixthirtydance.org
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: akanke525bd8@ll.cloudvxz.com
+2026-04-05 13:57:44 | INFO | 生成 TempMail.lol 邮箱成功: barbuto525bd8@6i.shopsprint.org
+2026-04-05 13:57:47 | WARNING | 步骤2失败: email=nestor525bd7@8l.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:47 | WARNING | 注册失败: step2_register_user | email=nestor525bd7@8l.cloudvxz.com
+2026-04-05 13:57:47 | WARNING | 注册流程失败: nestor525bd7@8l.cloudvxz.com
+2026-04-05 13:57:47 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=nestor525bd7@8l.cloudvxz.com
+2026-04-05 13:57:47 | INFO | 补号进度: token 0/461 | ✅0 ❌1 ⏭️0 | 用时 4.3s
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=lisette525bd7@qk.tohal.org reason=user_register_http_400
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=lisette525bd7@qk.tohal.org
+2026-04-05 13:57:48 | WARNING | 注册流程失败: lisette525bd7@qk.tohal.org
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=lisette525bd7@qk.tohal.org
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌2 ⏭️0 | 用时 4.7s
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=chrysler525bd8@n7k.tohal.org reason=user_register_http_400
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=chrysler525bd8@n7k.tohal.org
+2026-04-05 13:57:48 | WARNING | 注册流程失败: chrysler525bd8@n7k.tohal.org
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=chrysler525bd8@n7k.tohal.org
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌3 ⏭️0 | 用时 4.7s
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=romola525bd8@go.shopsprint.org reason=user_register_http_400
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=romola525bd8@go.shopsprint.org
+2026-04-05 13:57:48 | WARNING | 注册流程失败: romola525bd8@go.shopsprint.org
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=romola525bd8@go.shopsprint.org
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌4 ⏭️0 | 用时 5.1s
+2026-04-05 13:57:48 | INFO | 生成 TempMail.lol 邮箱成功: catha525bdc@ps.cloudvxz.com
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=sussi525bd8@4y.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=sussi525bd8@4y.sixthirtydance.org
+2026-04-05 13:57:48 | WARNING | 注册流程失败: sussi525bd8@4y.sixthirtydance.org
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=sussi525bd8@4y.sixthirtydance.org
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=zakarias525bd8@gui.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌5 ⏭️0 | 用时 5.3s
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=zakarias525bd8@gui.sixthirtydance.org
+2026-04-05 13:57:48 | WARNING | 注册流程失败: zakarias525bd8@gui.sixthirtydance.org
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=zakarias525bd8@gui.sixthirtydance.org
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌6 ⏭️0 | 用时 5.3s
+2026-04-05 13:57:48 | INFO | 生成 TempMail.lol 邮箱成功: nyssa525bdc@ng.shopsprint.org
+2026-04-05 13:57:48 | WARNING | 步骤2失败: email=akanke525bd8@ll.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:48 | WARNING | 注册失败: step2_register_user | email=akanke525bd8@ll.cloudvxz.com
+2026-04-05 13:57:48 | WARNING | 注册流程失败: akanke525bd8@ll.cloudvxz.com
+2026-04-05 13:57:48 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=akanke525bd8@ll.cloudvxz.com
+2026-04-05 13:57:48 | INFO | 补号进度: token 0/461 | ✅0 ❌7 ⏭️0 | 用时 5.4s
+2026-04-05 13:57:49 | INFO | 生成 TempMail.lol 邮箱成功: frick525bdd@74g.sixthirtydance.org
+2026-04-05 13:57:49 | INFO | 生成 TempMail.lol 邮箱成功: nobell525bdd@ne.shopsprint.org
+2026-04-05 13:57:49 | WARNING | 步骤2失败: email=barbuto525bd8@6i.shopsprint.org reason=user_register_http_400
+2026-04-05 13:57:49 | WARNING | 注册失败: step2_register_user | email=barbuto525bd8@6i.shopsprint.org
+2026-04-05 13:57:49 | WARNING | 注册流程失败: barbuto525bd8@6i.shopsprint.org
+2026-04-05 13:57:49 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=barbuto525bd8@6i.shopsprint.org
+2026-04-05 13:57:49 | INFO | 补号进度: token 0/461 | ✅0 ❌8 ⏭️0 | 用时 6.1s
+2026-04-05 13:57:49 | INFO | 生成 TempMail.lol 邮箱成功: leah525bdd@zc.accesswiki.net
+2026-04-05 13:57:49 | INFO | 生成 TempMail.lol 邮箱成功: giralda525bdd@h7.hush2u.com
+2026-04-05 13:57:49 | INFO | 生成 TempMail.lol 邮箱成功: conyers525bdd@7wk.cloudvxz.com
+2026-04-05 13:57:50 | INFO | 生成 TempMail.lol 邮箱成功: emlyn525bde@yl.cloudvxz.com
+2026-04-05 13:57:52 | WARNING | 步骤2失败: email=catha525bdc@ps.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:52 | WARNING | 注册失败: step2_register_user | email=catha525bdc@ps.cloudvxz.com
+2026-04-05 13:57:52 | WARNING | 注册流程失败: catha525bdc@ps.cloudvxz.com
+2026-04-05 13:57:52 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=catha525bdc@ps.cloudvxz.com
+2026-04-05 13:57:52 | INFO | 补号进度: token 0/461 | ✅0 ❌9 ⏭️0 | 用时 8.8s
+2026-04-05 13:57:52 | WARNING | 步骤2失败: email=nyssa525bdc@ng.shopsprint.org reason=user_register_http_400
+2026-04-05 13:57:52 | WARNING | 注册失败: step2_register_user | email=nyssa525bdc@ng.shopsprint.org
+2026-04-05 13:57:52 | WARNING | 注册流程失败: nyssa525bdc@ng.shopsprint.org
+2026-04-05 13:57:52 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=nyssa525bdc@ng.shopsprint.org
+2026-04-05 13:57:52 | INFO | 补号进度: token 0/461 | ✅0 ❌10 ⏭️0 | 用时 9.3s
+2026-04-05 13:57:52 | WARNING | 步骤2失败: email=frick525bdd@74g.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:52 | WARNING | 注册失败: step2_register_user | email=frick525bdd@74g.sixthirtydance.org
+2026-04-05 13:57:52 | WARNING | 注册流程失败: frick525bdd@74g.sixthirtydance.org
+2026-04-05 13:57:52 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=frick525bdd@74g.sixthirtydance.org
+2026-04-05 13:57:52 | INFO | 补号进度: token 0/461 | ✅0 ❌11 ⏭️0 | 用时 9.5s
+2026-04-05 13:57:52 | INFO | 生成 TempMail.lol 邮箱成功: erena525be0@bn.cloudvxz.com
+2026-04-05 13:57:52 | WARNING | 步骤2失败: email=nobell525bdd@ne.shopsprint.org reason=user_register_http_400
+2026-04-05 13:57:52 | WARNING | 注册失败: step2_register_user | email=nobell525bdd@ne.shopsprint.org
+2026-04-05 13:57:52 | WARNING | 注册流程失败: nobell525bdd@ne.shopsprint.org
+2026-04-05 13:57:52 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=nobell525bdd@ne.shopsprint.org
+2026-04-05 13:57:52 | INFO | 补号进度: token 0/461 | ✅0 ❌12 ⏭️0 | 用时 9.6s
+2026-04-05 13:57:53 | INFO | 生成 TempMail.lol 邮箱成功: janeen525be1@5p.hush2u.com
+2026-04-05 13:57:53 | WARNING | 步骤2失败: email=giralda525bdd@h7.hush2u.com reason=user_register_http_400
+2026-04-05 13:57:53 | WARNING | 注册失败: step2_register_user | email=giralda525bdd@h7.hush2u.com
+2026-04-05 13:57:53 | WARNING | 注册流程失败: giralda525bdd@h7.hush2u.com
+2026-04-05 13:57:53 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=giralda525bdd@h7.hush2u.com
+2026-04-05 13:57:53 | INFO | 补号进度: token 0/461 | ✅0 ❌13 ⏭️0 | 用时 10.0s
+2026-04-05 13:57:53 | INFO | 生成 TempMail.lol 邮箱成功: modesta525be1@uv.sixthirtydance.org
+2026-04-05 13:57:53 | WARNING | 步骤2失败: email=conyers525bdd@7wk.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:53 | WARNING | 注册失败: step2_register_user | email=conyers525bdd@7wk.cloudvxz.com
+2026-04-05 13:57:53 | WARNING | 注册流程失败: conyers525bdd@7wk.cloudvxz.com
+2026-04-05 13:57:53 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=conyers525bdd@7wk.cloudvxz.com
+2026-04-05 13:57:53 | INFO | 补号进度: token 0/461 | ✅0 ❌14 ⏭️0 | 用时 10.2s
+2026-04-05 13:57:53 | WARNING | 步骤2失败: email=leah525bdd@zc.accesswiki.net reason=user_register_http_400
+2026-04-05 13:57:53 | WARNING | 注册失败: step2_register_user | email=leah525bdd@zc.accesswiki.net
+2026-04-05 13:57:53 | WARNING | 注册流程失败: leah525bdd@zc.accesswiki.net
+2026-04-05 13:57:53 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=leah525bdd@zc.accesswiki.net
+2026-04-05 13:57:53 | INFO | 补号进度: token 0/461 | ✅0 ❌15 ⏭️0 | 用时 10.6s
+2026-04-05 13:57:54 | INFO | 生成 TempMail.lol 邮箱成功: ewer525be1@pz.shopsprint.org
+2026-04-05 13:57:54 | INFO | 生成 TempMail.lol 邮箱成功: melita525be1@47h.sixthirtydance.org
+2026-04-05 13:57:54 | INFO | 生成 TempMail.lol 邮箱成功: jodee525be2@9a.sixthirtydance.org
+2026-04-05 13:57:54 | INFO | 生成 TempMail.lol 邮箱成功: holly525be2@uq.tohal.org
+2026-04-05 13:57:54 | WARNING | 步骤2失败: email=emlyn525bde@yl.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:54 | WARNING | 注册失败: step2_register_user | email=emlyn525bde@yl.cloudvxz.com
+2026-04-05 13:57:54 | WARNING | 注册流程失败: emlyn525bde@yl.cloudvxz.com
+2026-04-05 13:57:54 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=emlyn525bde@yl.cloudvxz.com
+2026-04-05 13:57:54 | INFO | 补号进度: token 0/461 | ✅0 ❌16 ⏭️0 | 用时 11.5s
+2026-04-05 13:57:55 | INFO | 生成 TempMail.lol 邮箱成功: andrei525be3@gt.sixthirtydance.org
+2026-04-05 13:57:56 | WARNING | 步骤2失败: email=erena525be0@bn.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:57:56 | WARNING | 注册失败: step2_register_user | email=erena525be0@bn.cloudvxz.com
+2026-04-05 13:57:56 | WARNING | 注册流程失败: erena525be0@bn.cloudvxz.com
+2026-04-05 13:57:56 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=erena525be0@bn.cloudvxz.com
+2026-04-05 13:57:56 | INFO | 补号进度: token 0/461 | ✅0 ❌17 ⏭️0 | 用时 13.4s
+2026-04-05 13:57:57 | WARNING | 步骤2失败: email=janeen525be1@5p.hush2u.com reason=user_register_http_400
+2026-04-05 13:57:57 | WARNING | 注册失败: step2_register_user | email=janeen525be1@5p.hush2u.com
+2026-04-05 13:57:57 | WARNING | 注册流程失败: janeen525be1@5p.hush2u.com
+2026-04-05 13:57:57 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=janeen525be1@5p.hush2u.com
+2026-04-05 13:57:57 | INFO | 补号进度: token 0/461 | ✅0 ❌18 ⏭️0 | 用时 14.0s
+2026-04-05 13:57:57 | WARNING | 步骤2失败: email=modesta525be1@uv.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:57 | WARNING | 注册失败: step2_register_user | email=modesta525be1@uv.sixthirtydance.org
+2026-04-05 13:57:57 | WARNING | 注册流程失败: modesta525be1@uv.sixthirtydance.org
+2026-04-05 13:57:57 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=modesta525be1@uv.sixthirtydance.org
+2026-04-05 13:57:57 | INFO | 补号进度: token 0/461 | ✅0 ❌19 ⏭️0 | 用时 14.3s
+2026-04-05 13:57:57 | INFO | 生成 TempMail.lol 邮箱成功: daughtry525be5@ot.cloudvxz.com
+2026-04-05 13:57:58 | WARNING | 步骤2失败: email=melita525be1@47h.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:58 | WARNING | 注册失败: step2_register_user | email=melita525be1@47h.sixthirtydance.org
+2026-04-05 13:57:58 | WARNING | 注册流程失败: melita525be1@47h.sixthirtydance.org
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=melita525be1@47h.sixthirtydance.org
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌20 ⏭️0 | 用时 14.7s
+2026-04-05 13:57:58 | WARNING | 步骤2失败: email=jodee525be2@9a.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:58 | WARNING | 注册失败: step2_register_user | email=jodee525be2@9a.sixthirtydance.org
+2026-04-05 13:57:58 | WARNING | 注册流程失败: jodee525be2@9a.sixthirtydance.org
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=jodee525be2@9a.sixthirtydance.org
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌21 ⏭️0 | 用时 14.9s
+2026-04-05 13:57:58 | WARNING | 步骤2失败: email=ewer525be1@pz.shopsprint.org reason=user_register_http_400
+2026-04-05 13:57:58 | WARNING | 注册失败: step2_register_user | email=ewer525be1@pz.shopsprint.org
+2026-04-05 13:57:58 | WARNING | 注册流程失败: ewer525be1@pz.shopsprint.org
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=ewer525be1@pz.shopsprint.org
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌22 ⏭️0 | 用时 14.9s
+2026-04-05 13:57:58 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌23 ⏭️0 | 用时 15.1s
+2026-04-05 13:57:58 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌24 ⏭️0 | 用时 15.1s
+2026-04-05 13:57:58 | WARNING | 步骤2失败: email=holly525be2@uq.tohal.org reason=user_register_http_400
+2026-04-05 13:57:58 | WARNING | 注册失败: step2_register_user | email=holly525be2@uq.tohal.org
+2026-04-05 13:57:58 | WARNING | 注册流程失败: holly525be2@uq.tohal.org
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=holly525be2@uq.tohal.org
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌25 ⏭️0 | 用时 15.2s
+2026-04-05 13:57:58 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:58 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:58 | INFO | 补号进度: token 0/461 | ✅0 ❌26 ⏭️0 | 用时 15.6s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌27 ⏭️0 | 用时 15.7s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌28 ⏭️0 | 用时 15.7s
+2026-04-05 13:57:59 | WARNING | 步骤2失败: email=andrei525be3@gt.sixthirtydance.org reason=user_register_http_400
+2026-04-05 13:57:59 | WARNING | 注册失败: step2_register_user | email=andrei525be3@gt.sixthirtydance.org
+2026-04-05 13:57:59 | WARNING | 注册流程失败: andrei525be3@gt.sixthirtydance.org
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=andrei525be3@gt.sixthirtydance.org
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌29 ⏭️0 | 用时 15.8s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌30 ⏭️0 | 用时 15.9s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌31 ⏭️0 | 用时 16.1s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌32 ⏭️0 | 用时 16.3s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌33 ⏭️0 | 用时 16.5s
+2026-04-05 13:57:59 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:57:59 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:57:59 | INFO | 补号进度: token 0/461 | ✅0 ❌34 ⏭️0 | 用时 16.5s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌35 ⏭️0 | 用时 16.7s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌36 ⏭️0 | 用时 16.8s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌37 ⏭️0 | 用时 16.8s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌38 ⏭️0 | 用时 16.9s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌39 ⏭️0 | 用时 17.0s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌40 ⏭️0 | 用时 17.2s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌41 ⏭️0 | 用时 17.3s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌42 ⏭️0 | 用时 17.5s
+2026-04-05 13:58:00 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:00 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:00 | INFO | 补号进度: token 0/461 | ✅0 ❌43 ⏭️0 | 用时 17.6s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌44 ⏭️0 | 用时 17.7s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌45 ⏭️0 | 用时 17.9s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌46 ⏭️0 | 用时 18.0s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌47 ⏭️0 | 用时 18.0s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌48 ⏭️0 | 用时 18.1s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌49 ⏭️0 | 用时 18.3s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌50 ⏭️0 | 用时 18.3s
+2026-04-05 13:58:01 | WARNING | 步骤2失败: email=daughtry525be5@ot.cloudvxz.com reason=user_register_http_400
+2026-04-05 13:58:01 | WARNING | 注册失败: step2_register_user | email=daughtry525be5@ot.cloudvxz.com
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 注册流程失败: daughtry525be5@ot.cloudvxz.com
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=register detail=user_register_http_400 email=daughtry525be5@ot.cloudvxz.com
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌51 ⏭️0 | 用时 18.6s
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌52 ⏭️0 | 用时 18.6s
+2026-04-05 13:58:01 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:01 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:01 | INFO | 补号进度: token 0/461 | ✅0 ❌53 ⏭️0 | 用时 18.6s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌54 ⏭️0 | 用时 18.8s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌55 ⏭️0 | 用时 18.8s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌56 ⏭️0 | 用时 18.9s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌57 ⏭️0 | 用时 19.0s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌58 ⏭️0 | 用时 19.1s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌59 ⏭️0 | 用时 19.3s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌60 ⏭️0 | 用时 19.5s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌61 ⏭️0 | 用时 19.5s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌62 ⏭️0 | 用时 19.6s
+2026-04-05 13:58:02 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:02 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:02 | INFO | 补号进度: token 0/461 | ✅0 ❌63 ⏭️0 | 用时 19.6s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌64 ⏭️0 | 用时 19.7s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌65 ⏭️0 | 用时 19.9s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌66 ⏭️0 | 用时 20.0s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌67 ⏭️0 | 用时 20.1s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌68 ⏭️0 | 用时 20.3s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌69 ⏭️0 | 用时 20.4s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌70 ⏭️0 | 用时 20.4s
+2026-04-05 13:58:03 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:03 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:03 | INFO | 补号进度: token 0/461 | ✅0 ❌71 ⏭️0 | 用时 20.6s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌72 ⏭️0 | 用时 20.7s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌73 ⏭️0 | 用时 20.7s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌74 ⏭️0 | 用时 20.7s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌75 ⏭️0 | 用时 21.0s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌76 ⏭️0 | 用时 21.1s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌77 ⏭️0 | 用时 21.1s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌78 ⏭️0 | 用时 21.2s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌79 ⏭️0 | 用时 21.3s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌80 ⏭️0 | 用时 21.4s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌81 ⏭️0 | 用时 21.6s
+2026-04-05 13:58:04 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:04 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:04 | INFO | 补号进度: token 0/461 | ✅0 ❌82 ⏭️0 | 用时 21.6s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌83 ⏭️0 | 用时 21.9s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌84 ⏭️0 | 用时 21.9s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌85 ⏭️0 | 用时 21.9s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌86 ⏭️0 | 用时 22.0s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌87 ⏭️0 | 用时 22.1s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌88 ⏭️0 | 用时 22.2s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌89 ⏭️0 | 用时 22.4s
+2026-04-05 13:58:05 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:05 | INFO | 补号进度: token 0/461 | ✅0 ❌90 ⏭️0 | 用时 22.4s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌91 ⏭️0 | 用时 22.8s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌92 ⏭️0 | 用时 22.9s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌93 ⏭️0 | 用时 23.0s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌94 ⏭️0 | 用时 23.1s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌95 ⏭️0 | 用时 23.1s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌96 ⏭️0 | 用时 23.1s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌97 ⏭️0 | 用时 23.3s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌98 ⏭️0 | 用时 23.6s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌99 ⏭️0 | 用时 23.6s
+2026-04-05 13:58:06 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:06 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:06 | INFO | 补号进度: token 0/461 | ✅0 ❌100 ⏭️0 | 用时 23.6s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌101 ⏭️0 | 用时 23.7s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌102 ⏭️0 | 用时 24.0s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌103 ⏭️0 | 用时 24.1s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌104 ⏭️0 | 用时 24.2s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌105 ⏭️0 | 用时 24.2s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌106 ⏭️0 | 用时 24.3s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌107 ⏭️0 | 用时 24.5s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌108 ⏭️0 | 用时 24.6s
+2026-04-05 13:58:07 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:07 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:07 | INFO | 补号进度: token 0/461 | ✅0 ❌109 ⏭️0 | 用时 24.6s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌110 ⏭️0 | 用时 24.7s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌111 ⏭️0 | 用时 24.8s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌112 ⏭️0 | 用时 24.9s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌113 ⏭️0 | 用时 24.9s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌114 ⏭️0 | 用时 24.9s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌115 ⏭️0 | 用时 25.2s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌116 ⏭️0 | 用时 25.2s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌117 ⏭️0 | 用时 25.2s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌118 ⏭️0 | 用时 25.3s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌119 ⏭️0 | 用时 25.4s
+2026-04-05 13:58:08 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:08 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:08 | INFO | 补号进度: token 0/461 | ✅0 ❌120 ⏭️0 | 用时 25.5s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌121 ⏭️0 | 用时 25.8s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌122 ⏭️0 | 用时 25.8s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌123 ⏭️0 | 用时 26.0s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌124 ⏭️0 | 用时 26.0s
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌125 ⏭️0 | 用时 26.0s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌126 ⏭️0 | 用时 26.0s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌127 ⏭️0 | 用时 26.4s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌128 ⏭️0 | 用时 26.4s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌129 ⏭️0 | 用时 26.4s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌130 ⏭️0 | 用时 26.6s
+2026-04-05 13:58:09 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:09 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:09 | INFO | 补号进度: token 0/461 | ✅0 ❌131 ⏭️0 | 用时 26.6s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌132 ⏭️0 | 用时 26.9s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌133 ⏭️0 | 用时 27.0s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌134 ⏭️0 | 用时 27.1s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌135 ⏭️0 | 用时 27.2s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌136 ⏭️0 | 用时 27.2s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌137 ⏭️0 | 用时 27.4s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌138 ⏭️0 | 用时 27.4s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌139 ⏭️0 | 用时 27.5s
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌140 ⏭️0 | 用时 27.5s
+2026-04-05 13:58:10 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:10 | INFO | 补号进度: token 0/461 | ✅0 ❌141 ⏭️0 | 用时 27.6s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌142 ⏭️0 | 用时 27.7s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌143 ⏭️0 | 用时 27.7s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌144 ⏭️0 | 用时 28.0s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌145 ⏭️0 | 用时 28.0s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌146 ⏭️0 | 用时 28.2s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌147 ⏭️0 | 用时 28.2s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌148 ⏭️0 | 用时 28.2s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌149 ⏭️0 | 用时 28.3s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌150 ⏭️0 | 用时 28.5s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌151 ⏭️0 | 用时 28.6s
+2026-04-05 13:58:11 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:11 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:11 | INFO | 补号进度: token 0/461 | ✅0 ❌152 ⏭️0 | 用时 28.6s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌153 ⏭️0 | 用时 28.9s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌154 ⏭️0 | 用时 29.0s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌155 ⏭️0 | 用时 29.1s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌156 ⏭️0 | 用时 29.1s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌157 ⏭️0 | 用时 29.3s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌158 ⏭️0 | 用时 29.4s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌159 ⏭️0 | 用时 29.4s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌160 ⏭️0 | 用时 29.5s
+2026-04-05 13:58:12 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:12 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:12 | INFO | 补号进度: token 0/461 | ✅0 ❌161 ⏭️0 | 用时 29.6s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌162 ⏭️0 | 用时 29.9s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌163 ⏭️0 | 用时 29.9s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌164 ⏭️0 | 用时 29.9s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌165 ⏭️0 | 用时 30.0s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌166 ⏭️0 | 用时 30.0s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌167 ⏭️0 | 用时 30.2s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌168 ⏭️0 | 用时 30.2s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌169 ⏭️0 | 用时 30.3s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌170 ⏭️0 | 用时 30.5s
+2026-04-05 13:58:13 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:13 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:13 | INFO | 补号进度: token 0/461 | ✅0 ❌171 ⏭️0 | 用时 30.6s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌172 ⏭️0 | 用时 30.8s
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌173 ⏭️0 | 用时 30.8s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌174 ⏭️0 | 用时 30.9s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌175 ⏭️0 | 用时 30.9s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌176 ⏭️0 | 用时 31.1s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌177 ⏭️0 | 用时 31.1s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌178 ⏭️0 | 用时 31.1s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌179 ⏭️0 | 用时 31.4s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌180 ⏭️0 | 用时 31.5s
+2026-04-05 13:58:14 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:14 | INFO | 补号进度: token 0/461 | ✅0 ❌181 ⏭️0 | 用时 31.6s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌182 ⏭️0 | 用时 31.7s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌183 ⏭️0 | 用时 31.8s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌184 ⏭️0 | 用时 31.8s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌185 ⏭️0 | 用时 32.0s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌186 ⏭️0 | 用时 32.1s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌187 ⏭️0 | 用时 32.2s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌188 ⏭️0 | 用时 32.2s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌189 ⏭️0 | 用时 32.3s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌190 ⏭️0 | 用时 32.4s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌191 ⏭️0 | 用时 32.4s
+2026-04-05 13:58:15 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:15 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:15 | INFO | 补号进度: token 0/461 | ✅0 ❌192 ⏭️0 | 用时 32.5s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌193 ⏭️0 | 用时 32.7s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌194 ⏭️0 | 用时 32.8s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌195 ⏭️0 | 用时 32.8s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌196 ⏭️0 | 用时 32.8s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌197 ⏭️0 | 用时 33.0s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌198 ⏭️0 | 用时 33.3s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌199 ⏭️0 | 用时 33.3s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌200 ⏭️0 | 用时 33.4s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌201 ⏭️0 | 用时 33.5s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌202 ⏭️0 | 用时 33.6s
+2026-04-05 13:58:16 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:16 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:16 | INFO | 补号进度: token 0/461 | ✅0 ❌203 ⏭️0 | 用时 33.6s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌204 ⏭️0 | 用时 33.8s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌205 ⏭️0 | 用时 33.8s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌206 ⏭️0 | 用时 33.9s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌207 ⏭️0 | 用时 34.2s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌208 ⏭️0 | 用时 34.3s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌209 ⏭️0 | 用时 34.4s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌210 ⏭️0 | 用时 34.5s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌211 ⏭️0 | 用时 34.6s
+2026-04-05 13:58:17 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:17 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:17 | INFO | 补号进度: token 0/461 | ✅0 ❌212 ⏭️0 | 用时 34.6s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌213 ⏭️0 | 用时 34.8s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌214 ⏭️0 | 用时 34.9s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌215 ⏭️0 | 用时 35.0s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌216 ⏭️0 | 用时 35.2s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌217 ⏭️0 | 用时 35.2s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌218 ⏭️0 | 用时 35.3s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌219 ⏭️0 | 用时 35.3s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌220 ⏭️0 | 用时 35.3s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌221 ⏭️0 | 用时 35.5s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌222 ⏭️0 | 用时 35.5s
+2026-04-05 13:58:18 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:18 | INFO | 补号进度: token 0/461 | ✅0 ❌223 ⏭️0 | 用时 35.5s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌224 ⏭️0 | 用时 36.1s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌225 ⏭️0 | 用时 36.3s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌226 ⏭️0 | 用时 36.3s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌227 ⏭️0 | 用时 36.3s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌228 ⏭️0 | 用时 36.3s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌229 ⏭️0 | 用时 36.4s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌230 ⏭️0 | 用时 36.5s
+2026-04-05 13:58:19 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:19 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:19 | INFO | 补号进度: token 0/461 | ✅0 ❌231 ⏭️0 | 用时 36.6s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌232 ⏭️0 | 用时 36.7s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌233 ⏭️0 | 用时 36.8s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌234 ⏭️0 | 用时 36.8s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌235 ⏭️0 | 用时 36.9s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌236 ⏭️0 | 用时 37.0s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌237 ⏭️0 | 用时 37.2s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌238 ⏭️0 | 用时 37.3s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌239 ⏭️0 | 用时 37.4s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌240 ⏭️0 | 用时 37.5s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌241 ⏭️0 | 用时 37.5s
+2026-04-05 13:58:20 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:20 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:20 | INFO | 补号进度: token 0/461 | ✅0 ❌242 ⏭️0 | 用时 37.5s
+2026-04-05 13:58:21 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:21 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:21 | INFO | 补号进度: token 0/461 | ✅0 ❌243 ⏭️0 | 用时 37.8s
+2026-04-05 13:58:21 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:21 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:21 | INFO | 补号进度: token 0/461 | ✅0 ❌244 ⏭️0 | 用时 37.9s
+2026-04-05 13:58:21 | WARNING | TempMail.lol 创建邮箱失败: HTTP 429: {"error":"Rate limited (free)"}
+2026-04-05 13:58:21 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 13:58:21 | INFO | 补号进度: token 0/461 | ✅0 ❌245 ⏭️0 | 用时 37.9s

@@ -1,0 +1,30 @@
+2026-04-05 18:32:01 | INFO | 详细流程日志: /root/gpt-register-oss/logs/flow-trace/flow_trace_20260405_183201.jsonl
+2026-04-05 18:32:01 | INFO | === 账号池自动维护开始（二合一）===
+2026-04-05 18:32:01 | INFO | 配置文件: /root/gpt-register-oss/config.json
+2026-04-05 18:32:01 | INFO | 日志文件: /root/gpt-register-oss/logs/pool_maintainer_20260405_183201_277398.log
+2026-04-05 18:32:01 | INFO | === 账号池循环维护开始 ===
+2026-04-05 18:32:01 | INFO | >>> 循环轮次 #1 开始
+2026-04-05 18:32:01 | INFO | 开始清理账号: base_url=http://127.0.0.1:8317 target_type=codex used_percent_threshold=90 sample_size=0
+2026-04-05 18:32:03 | INFO | 账号探测进度: 已检查=50/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:04 | INFO | 账号探测进度: 已检查=100/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:05 | INFO | 账号探测进度: 已检查=114/114, 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:05 | INFO | 探测完成: 总账号=114, codex账号=114, 本轮探测=114, 401失效=0, used_percent超标=35, quota=35, healthy+disabled=0
+2026-04-05 18:32:05 | INFO | 清理策略决策: 待删=0, 待禁用=0, 待启用=0
+2026-04-05 18:32:05 | INFO | 清理动作汇总: 删除(成功=0 失败=0) 禁用(成功=0 失败=0) 启用(成功=0 失败=0)
+2026-04-05 18:32:05 | INFO | 清理阶段汇总: 动作总计=0 | 删除 0/0 | 禁用 0/0 | 启用 0/0
+2026-04-05 18:32:05 | INFO | 清理后统计: 总账号=114, candidates=79, 阈值=100
+2026-04-05 18:32:05 | INFO | 当前 candidates 未达标，缺口=21，开始补号。
+2026-04-05 18:32:05 | INFO | 开始补号: 目标 token=21, 并发=1, 邮箱提供方=tempmail_lol
+2026-04-05 18:32:05 | INFO | Mail Provider Config: tempmail_lol(https://api.tempmail.lol/v2)
+2026-04-05 18:32:05 | WARNING | TempMail.lol 创建邮箱失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-05 18:32:05 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:32:05 | INFO | 补号进度: token 0/21 | ✅0 ❌1 ⏭️0 | 用时 0.3s
+2026-04-05 18:32:10 | WARNING | TempMail.lol 创建邮箱失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-05 18:32:10 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:32:10 | INFO | 补号进度: token 0/21 | ✅0 ❌2 ⏭️0 | 用时 5.2s
+2026-04-05 18:32:14 | WARNING | TempMail.lol 创建邮箱失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-05 18:32:14 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:32:14 | INFO | 补号进度: token 0/21 | ✅0 ❌3 ⏭️0 | 用时 9.3s
+2026-04-05 18:32:18 | WARNING | TempMail.lol 创建邮箱失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-05 18:32:18 | WARNING | 失败归类: stage=create_mailbox detail=provider=tempmail_lol email=-
+2026-04-05 18:32:18 | INFO | 补号进度: token 0/21 | ✅0 ❌4 ⏭️0 | 用时 12.4s
